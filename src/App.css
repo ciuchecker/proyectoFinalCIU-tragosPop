@@ -2,37 +2,207 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*###########################################################*/
+/*                        Header                             */
+/*###########################################################*/
+.fuenteTitulo{
+  font-size: calc(10px + 1.6vw);
+  font-family: "Anta", sans-serif;
+  color: yellow;
+  display: contents;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.contenedorTitulo{
+  background-color: black;  
+}
+
+
+/*CONSIGNAS*/
+
+.fuenteTituloBody{
+    font-size: calc(12px + 1.5vw);
+    font-family: "Anta", sans-serif;
+    color:Red;
   }
+
+  .estiloContenedor{
+    background-color: #94866d;
+    height: 100vh;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: normal;
+  }
+
+  .contenedorArticulosConsignas{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .formatoArticulo{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    margin: 2%;    
+  }
+
+/*HOME*/
+  .contenedorHome{
+    background-color: #94866d;
+    width: 100%;
+    height: 100%;
+  }
+
+ .contenedorVideosHome{
+    padding: 2%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .articuloVideo{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    
+  }
+
+  /*LETRA BODY*/
+  .fuenteBody{
+    font-size: calc(10px + 1.3vw);
+    font-family: "Anta", sans-serif;
+    color: black;
+  }
+
+  /*CONTENEDOR PRODUCTOS*/
+  .contenedorGrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+
+/*COMPRAS*/
+.contenedorCompras{
+  background-color: #94866d;
+  padding: 2%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.estiloTarjeta{
+  margin-bottom: 4%;
+}
+
+.contenedorBarraBusqueda{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: nowrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  align-content: normal;
+  
+  padding: 2%;
+
+  background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contenedorBBIndividual{
+  width: 50%; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contenedorTituloCarrito{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+}
+
+.contenedor{
+  background-color: white
+}
+
+/*#########################################################*/
+/*Escritorio*/
+/*#########################################################*/
+@media only screen and (min-width: 1024px){
+ 
+}
+
+/*#########################################################*/
+/*Tablet*/
+/*#########################################################*/
+@media only screen and (min-width: 767px) and (max-width: 1024px){
+/*CONSIGNAS*/
+  .fuenteTituloBody{
+    font-size: calc(14px + 1.7vw);
   }
-  to {
-    transform: rotate(360deg);
+  
+  .estiloContenedor{
+    height: 100%;
+  }
+
+  .contenedorArticulosConsignas{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .formatoArticulo{
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin: 2%;    
+  }
+
+/*HOME*/
+  .contenedorVideosHome{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+/*CONTENEDOR PRODUCTOS*/
+  .contenedorGrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+/*#########################################################*/
+/*Celular*/
+/*#########################################################*/
+@media only screen and (max-width: 767px){
+/*CONSIGNAS*/
+ .fuenteTituloBody{
+    font-size: calc(14px + 2vw);
+  }
+  
+  .estiloContenedor{
+    height: 100%;
+  }
+
+  .contenedorArticulosConsignas{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .formatoArticulo{
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin: 2%;    
+  }
+
+/*HOME*/
+  .contenedorVideosHome{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+/*CONTENEDOR PRODUCTOS*/
+  .contenedorGrid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
   }
 }
